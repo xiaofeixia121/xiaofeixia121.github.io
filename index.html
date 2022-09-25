@@ -9,8 +9,18 @@
   <title>Document</title>
  </head>
  <body>
-  <h1>
-  你好
-  </h1>
+  <h1>九九乘法表</h1>
+  <table border = "1">
+   <%
+      for(int x=1;x<=9;x++){
+   out.print("<tr>");
+   for(int y=1;y<=x;y++){
+   out.print("<td>");
+   out.println(y+"*"+x+"="+x*y);
+                         out.print("</td>");
+                         }
+                         out.print("</tr>");
+                         %>
+   </table>
  </body>
 </html>
